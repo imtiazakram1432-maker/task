@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(204, 236, 205);
+            border: 10px ridge #555;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(146, 206, 224);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h5 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Sticky Navbar */
+        nav {
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: bisque;
+            padding: 15px;
+            border-radius: 50px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: green;
+        }
+
+        /* Profile Image */
+        .profile img {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            border: 3px solid green;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 300px;
+            border-radius: 20px;
+            border: 5px solid green;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Links Box */
+        .link-box {
+            background-color: aliceblue;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Web Development Portfolio – Project #1</h1>
+
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Image">
+    </div>
+
+    <h2>Muhammad Imtiaz Ahmad</h2>
+
+    <p>My name is <b>Muhammad Imtiaz</b>. I am learning Web Development from GTTI.</p>
+    <p>We have studied <b>HTML and CSS</b> during the last few weeks.</p>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h5>HTML & CSS</h5>
+    <p><b>HTML</b> stands for Hyper Text Markup Language.</p>
+    <p><b>CSS</b> stands for Cascading Style Sheets.</p>
+
+    <h5>HTML Elements</h5>
+    <p>An HTML element is the basic building block of a web page.</p>
+
+    <div class="gallery">
+        <img src="html1.jpg" alt="HTML Image">
+        <img src="html2.jpg" alt="HTML Image">
+        <img src="html3.jpg" alt="HTML Image">
+        <img src="html4.jpg" alt="HTML Image">
+    </div>
+
+    <h5>Links</h5>
+    <div class="link-box">
+        <p>Check out my college:
+            <a href="https://www.gtti.edu.pk" target="_blank">GTTI Lahore</a>
+        </p>
+    </div>
+
+    <h5>Navigation Bar</h5>
+    <p>A navigation bar contains links to different pages of a website.</p>
+
+</div>
+
+</body>
+</html>
